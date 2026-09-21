@@ -1,0 +1,19 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+
+# vi-mode: esc for normal mode in the prompt; ctrl-r history search still works.
+VI_MODE_SET_CURSOR=true
+plugins=(git vi-mode)
+
+source $ZSH/oh-my-zsh.sh
+
+export EDITOR=nvim
+export VISUAL=nvim
+
+export PATH="$HOME/.local/bin:$PATH"          # also Antigravity CLI
+export PATH="/Library/TeX/texbin:$PATH"
+export PATH="$HOME/go/bin:$PATH"              # `go install` binaries (leetui, ...)
+export PATH="$HOME/.opencode/bin:$PATH"
+
+# Ollama models live on external SSD (NemoClaw/CLI-spawned `ollama serve` must honor this)
+export OLLAMA_MODELS="/Volumes/Extreme SSD/OLLAMA MODELS"

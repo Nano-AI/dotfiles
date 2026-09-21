@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Nano-AI
+	email = 27119566+Nano-AI@users.noreply.github.com
+# Please adapt and uncomment the following lines:
+#	name = Nano-AI
+#	email = 27119566+Nano-AI@users.noreply.github.com
