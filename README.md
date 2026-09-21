@@ -16,4 +16,6 @@ python3 ~/Documents/dotfiles/install.py   # symlinks into $HOME; existing files 
 | tmux + nvim (panes) | `ctrl` | `hjkl` moves across tmux panes and nvim splits seamlessly |
 | tmux | prefix (`ctrl-b`) | `v`/`s` split, `HJKL` resize, `ctrl-l` clear screen, `[` copy mode (`v` select, `y` yank) |
 
-Karabiner swaps Caps Lock and Backspace.
+Karabiner swaps Caps Lock and Backspace (less finger travel to delete). Its config is **copied**, not
+linked: Karabiner's root daemon can't open it through a link into `~/Documents`, which silently turns
+every remap off. After changing it in the Karabiner GUI: `cp ~/.config/karabiner/karabiner.json karabiner/`.

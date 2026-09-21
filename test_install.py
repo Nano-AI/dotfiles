@@ -18,6 +18,9 @@ with tempfile.TemporaryDirectory() as home:
     assert (home / ".config/nvim").resolve() == REPO / "nvim"
     backups = list(home.glob(".tmux.conf.bak-*"))
     assert len(backups) == 1 and backups[0].read_text() == "old"
+    kb = home / ".config/karabiner/karabiner.json"
+    assert not kb.is_symlink() and not kb.parent.is_symlink()  # Karabiner can't read through links
+    assert kb.read_bytes() == (REPO / "karabiner/karabiner.json").read_bytes()
 
     run()  # second run is a no-op
     assert len(list(home.glob("*.bak-*"))) == 1
