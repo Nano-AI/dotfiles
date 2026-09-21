@@ -11,7 +11,8 @@ python3 ~/Documents/dotfiles/install.py   # symlinks into $HOME; existing files 
 
 | Layer | Modifier | Keys |
 |---|---|---|
-| AeroSpace (windows) | `alt` | `hjkl` focus, `shift+hjkl` move, `f` fullscreen, `1-0`/letters workspace |
+| AeroSpace (windows) | `alt` | `hjkl` focus, `shift+hjkl` move, `f` fullscreen (`shift+f` macOS fullscreen), `1-0`/letters workspace |
+| kitty + nvim (panes) | `cmd` | `hjkl` moves across kitty panes and nvim splits seamlessly |
 | kitty (tabs) | `ctrl+shift` | `h`/`l` prev/next tab, `t` new tab here, `j`/`k` scroll, `/` search scrollback |
 | tmux + nvim (panes) | `ctrl` | `hjkl` moves across tmux panes and nvim splits seamlessly |
 | tmux | prefix (`ctrl-b`) | `v`/`s` split, `HJKL` resize, `ctrl-l` clear screen, `[` copy mode (`v` select, `y` yank) |

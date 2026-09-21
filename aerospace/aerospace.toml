@@ -114,6 +114,7 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
     alt-enter = 'fullscreen'
+    alt-shift-f = 'macos-native-fullscreen' # green-button fullscreen; alt-f is AeroSpace's
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
